@@ -39,8 +39,8 @@ A simple yet powerful single-page application for task management, built with a 
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/your-username/your-repo-name.git
-    cd your-repo-name
+    git clone https://github.com/averageencoreenjoer/fullstack-task.git
+    cd fullstack-task
     ```
 
 2.  **Setup the Backend (`task_api`):**
