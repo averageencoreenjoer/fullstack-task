@@ -1,0 +1,11 @@
+.task-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.no-tasks {
+    text-align: center;
+    color: var(--secondary-text-color);
+    margin-top: 3rem;
+    font-size: 1.1rem;
+}
