@@ -30,13 +30,10 @@ jobs:
 
     - name: Run tests with pytest
       run: pytest
-
+      
   frontend:
     name: Build Frontend
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./my-task-app
 
     steps:
     - name: Check out code
@@ -47,10 +44,12 @@ jobs:
       with:
         node-version: '20'
         cache: 'npm'
-        cache-dependency-path: ./my-task-app/package-lock.json
+        cache-dependency-path: '**/package-lock.json'
 
     - name: Install dependencies
+      working-directory: ./my-task-app
       run: npm install
 
     - name: Build project
+      working-directory: ./my-task-app
       run: npm run build
