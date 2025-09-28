@@ -47,9 +47,9 @@ jobs:
         cache-dependency-path: '**/package-lock.json'
 
     - name: Install dependencies
-      working-directory: ./my-task-app
+      working-directory: ${{ github.workspace }}/my-task-app
       run: npm install
 
     - name: Build project
-      working-directory: ./my-task-app
+      working-directory: ${{ github.workspace }}/my-task-app
       run: npm run build
